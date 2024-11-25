@@ -2,5 +2,34 @@
   {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 {{ define "main" }}
-  {{ .Content }}
+  <article>
+    <section>
+      {{.Content}}
+      <h2>Employment Experience</h2>
+      {{ $jobs := .Site.GetPage "/jobs" }}
+      {{ $year := 0 }}
+      {{ range $jobs.Pages }}
+        {{ if ne $year .Date.Year }}
+          {{ $year = .Date.Year }}
+          <h3>{{ $year }}</h3>
+        {{ end }}
+        <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+        <p>{{ .Date | time.Format ":date_medium" }}</p>
+        <p>{{ .Content }}</p>
+      {{ end }}
+    </section>
+    <section>
+      <h2>Contract Work & Gigs</h2>
+      {{ $gigs := .Site.GetPage "/gigs" }}
+      {{ $year := 0 }}
+      {{ range $gigs.Pages }}
+        {{ if ne $year .Date.Year }}
+          {{ $year = .Date.Year }}
+          <h3>{{ $year }}</h3>
+        {{ end }}
+        <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+        <p>{{ .Content }}</p>
+      {{ end }}
+    </section>
+  </article>
 {{ end }}
