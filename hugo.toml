@@ -1,3 +1,11 @@
 baseURL = 'https://mikekasprzak.com/'
 languageCode = 'en-us'
 title = 'Mike Kasprzak'
+
+[taxonomies]
+#category = 'categories'
+technology = 'technologies'
+role = 'roles'
+platform = 'platforms'
+
+location = 'location'

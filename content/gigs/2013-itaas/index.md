@@ -2,6 +2,8 @@
 date = '2013-01-01'
 draft = false
 title = 'Itaas Inc'
+categories = ['gig', 'teaching']
+technologies = ['javascript', 'html5']
 +++
 Deluth GA - Provided
 HTML5 Training a the London ON

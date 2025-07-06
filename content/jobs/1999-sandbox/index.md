@@ -5,6 +5,8 @@ title = 'Sandbox Studios'
 [params]
   date_start = '1999-12-01'
   date_end = '2001-12-01'
+categories = ['job', 'gamedev', 'middleware', 'lead']
+technologies = ['assembly', 'z80', 'c', 'c++', 'gameboy', 'gameboy advance', 'sdcc', 'gnu make']
 +++
 At 19 I was hired as a “Game Boy Programmer”, but I was
 quickly promoted to a Senior Programmer thanks to my
@@ -16,3 +18,5 @@ Notable roles on released projects:
 
 * The Emperor’s New Groove (Game Boy Color) -- Engine Programmer
 * Hoyle Card Games (Game Boy Color) -- Lead Programmer
+
+The company was acquire by Digital Illusions SE, and became Digital Illusions Canada.
