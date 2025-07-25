@@ -2,11 +2,14 @@
 date = '1999-12-01'
 draft = false
 title = 'Sandbox Studios'
+type = 'job'
 [params]
+  location = 'London, Ontario, Canada'
+  role = 'Senior Programmer'
   date_start = '1999-12-01'
   date_end = '2001-12-01'
 categories = ['job', 'gamedev', 'middleware', 'lead']
-technologies = ['assembly', 'z80', 'c', 'c++', 'gameboy', 'gameboy advance', 'sdcc', 'gnu make']
+technologies = ['assembly', 'z80', 'c', 'c++', 'gameboy', 'gameboy color', 'gameboy advance', 'sdcc', 'gnu make']
 +++
 At 19 I was hired as a “Game Boy Programmer”, but I was
 quickly promoted to a Senior Programmer thanks to my
